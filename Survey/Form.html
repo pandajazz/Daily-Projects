@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>Customer Experience Form</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Survey</h1>
+                <p>Let us know about your Customer Experience:</p>
+        </div>
+        <div>
+            <label for="name">
+                    NAME <input type="text" placeholder="Enter your Name" required> 
+            </label>
+        </div>
+        <div>
+            <label for="surname">
+                SURNAME <input type="text" placeholder="Enter your Surname" required>
+            </label>
+        </div>
+        <div>
+            <label for="age">
+                AGE <input type="text" placeholder="Enter your Age" required>
+            </label>
+        </div>
+        <div>
+            <label for ="email">
+                E-MAIL <input type="text" placeholder="Enter your e-mail" required>
+            </label>
+        </div>
+        <div>
+            <label class="dropdown" for ="dropdown"> Which option best describe your current role?</label>
+                    <select class="right" id="dropdown" name="dropdown">
+                      <option selected disabled>Select an option</option>
+                      <option value="student" >Student</option>
+                      <option value="job" >Full Time Job</option>
+                      <option value="partjob">Part Time Job</option>
+                      <option value="nojob">Unemployed</option>
+                    </select>   
+        </div>
+        <div>
+            <p>How do you rate your Customer Experience?</p>
+            <label for="amazing">
+                <input id="amazing" type="radio" name="rating expedience"> Amazing
+            </label>
+            <label for="average">
+                <input id="average" type="radio" name="rating experience"> Average
+            </label>
+            <label for="poor">
+                <input id="poor" type="radio" name="rating experience"> Poor
+            </label>
+        </div>
+        <br>
+        <div>
+            <label class="dropdown" for="dropdown">What did you enjoy the most?</label>
+                <select class="right" id="dropdown" name="dropdown">
+                    <option selected disabled>Select an option</option>
+                    <option value="service">Speed of service</option>
+                    <option value="staff">Friendliness of staff</option>
+                    <option value="buzz">Ambience/Cleanliness</option>
+                    <option value="other">Other (please mention in the Comments section)</option>
+                </select>
+        </div>
+        <div>
+            <p>Things that could be improved for your next Visit:</p>
+            <label for="quality">
+                <input id="quality" type="checkbox" name="improvement">Products Quality
+            </label>
+            
+            <label for="service">
+                <input id="service" type="checkbox" name="improvement">Service Quality
+            </label>
+            <label for="ambience">
+                <input id="ambience" type="checkbox" name="improvement">Ambience
+            </label>
+            <label for=other>
+                <input id="other" type="checkbox" name="improvement">Other (please mention in the Comments section)
+            </label>
+        </div>
+        <div>
+                <label for="subject">Any suggestion?</label>
+                <textarea id="subject" name="subject" placeholder="Add any other comments related to your Experience"></textarea>
+        </div>
+        <div>
+                <button type="Submit" onclick="">Submit</button>
+        </div>
+        
+    </body>
+</html>
