@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Miles Davis Tribute Page</title>
-        <style type="text/css">
-        h1 {border-bottom: 2px solid black;}
-
+    <style type="text/css">
         body {
-            background-color:lightgrey;
-            margin-left: 20%;
-            margin-right: 20%;
+            background-color: lightgrey;
+            /* margin-left: 20%; */
+            /* margin-right: 20%; */
             font-family: monospace;
             font-size: 14px;
-            color:dimgray;
+            color: dimgray;
+            text-align: center;
         }
-       
-        </style>
+
+        #main {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #title {
+            color: #E54E4E;
+        }
+
+        #img-div {
+            max-width: 900px;
+            /* display: block; */
+            /* margin: 0 auto; */
+        }
+
+        #image {
+            width: 100%;
+            height: auto;
+        }
+
+        figcaption {
+            display: block;
+        }
+
+        #img-caption {
+            margin: 15px 0 5px 0;
+        }
+
+        #list {
+            text-align: left;
+        }
+
+        #tribute-link {
+            color: #E54E4E;
+        }
+    </style>
 </head>
 
 <body>
+    <main id="main">
+        <h1 id="title" class="text-center"><strong><i>MILES DAVIS</i></strong></h1>
+        <hr>
+        <div id="img-div">
+            <img id="image"
+                src="https://www.udiscovermusic.com/wp-content/uploads/2019/06/Miles-Davis-Birth-Of-The-Cool-3-CREDIT-Herman-Leonard-Photography-LLC-1000.jpg"
+                alt="Smiley Miles">
+            <caption id="img-caption">A Smiley Miles Davis</caption>
+        </div>
 
-    <h1 class="text-center"><strong><i>Miles Davis</i></strong></h1>
-
-    <img src=Miles1.jpg alt="Smiley Miles">
-
-
-    <div>
-        <p><strong>Miles Dewey Davis III (May 26, 1926 / September 28, 1991)</strong> was an American jazz trumpeter, bandleader, and composer.<br>
-He is among the most influential and acclaimed figures in the history of jazz and 20th century music.<br>
-Davis adopted a variety of musical directions in a five-decade career that kept him at the forefront of many major stylistic developments in jazz.</p>
-
-    </div>
+        <section id="tribute-info">
+            <p><strong>Miles Dewey Davis III (May 26, 1926 / September 28, 1991)</strong> was an American jazz
+                trumpeter, bandleader, and composer.<br>
+                He is among the most influential and acclaimed figures in the history of jazz and 20th century
+                music.<br>
+                Davis adopted a variety of musical directions in a five-decade career that kept him at the forefront of
+                many major stylistic developments in jazz.</p>
 
 
-    <div>
-        <ol>
-            <li>1944 - made his <strong>professional debut</strong> as a member of saxophonist <i>Charlie Parker's bebop quintet</i></li>
-            <li>50s - recorded some of the earliest hard bop music while on Prestige Records</li>
-            <li>1955 - signed a long-term contract with Columbia Records and recorded <strong>'Round About Midnight (1957)</strong>, <strong>Sketches of Spain (1960)</strong>, and band recordings, such as <strong>Milestones (1958)</strong> and <strong>Kind of Blue (1959)</strong></li>
-            <li>early 60s - made several line-up changes while recording <strong>Someday My Prince Will Come</strong>, <strong>Blackhawk concerts (1961)</strong> and <strong>Seven Steps to Heaven (1963)</strong></li>
-            <li>late 60s - with his new quintet he led on a series of more abstract recordings, helping pioneer the post-bop genre with albums such as <strong>E.S.P (1965)</strong> and <strong>Miles Smiles (1967)</strong>, before transitioning into his electric period</li>
-            <li>70s - he experimented with rock, funk, African rhythms, emerging electronic music technology, and an ever-changing line-up of musicians. This period, includind <strong>In a Silent Way (1969)</strong>, <strong>Bitches Brew (1970)</strong> and <strong>Agharta (1975)</strong> was the most controversial in his career</li>
-            <li>80s - after a five-year retirement, he resumed his career: employing younger musicians and pop sounds on albums such as <strong>Man with the Horn (1981)</strong> and <strong>Tutu (1986)</strong>. Critics were generally unreceptive but the decade garnered the trumpeter his highest level of commercial recognition</li>
-            <li>September 28, 1991 - Davis died for the combined effects of a stroke, pneumonia, and respiratory failure</li>
-            <li>2006 - Davis was inducted into the <u>Rock and Roll Hall of Fame</u>, which recognized him as <i>"one of the key figures in the history of jazz."</i></li>
-        </ol>
-    </div>
 
-    <div>
-        <h4><strong>Associated Acts</strong></h4>
+            <div id="list">
+                <ol>
+                    <li>1944 - made his <strong>professional debut</strong> as a member of saxophonist <i>Charlie
+                            Parker's
+                            bebop quintet</i></li>
+                    <li>50s - recorded some of the earliest hard bop music while on Prestige Records</li>
+                    <li>1955 - signed a long-term contract with Columbia Records and recorded <strong>'Round About
+                            Midnight
+                            (1957)</strong>, <strong>Sketches of Spain (1960)</strong>, and band recordings, such as
+                        <strong>Milestones (1958)</strong> and <strong>Kind of Blue (1959)</strong></li>
+                    <li>early 60s - made several line-up changes while recording <strong>Someday My Prince Will
+                            Come</strong>, <strong>Blackhawk concerts (1961)</strong> and <strong>Seven Steps to Heaven
+                            (1963)</strong></li>
+                    <li>late 60s - with his new quintet he led on a series of more abstract recordings, helping pioneer
+                        the
+                        post-bop genre with albums such as <strong>E.S.P (1965)</strong> and <strong>Miles Smiles
+                            (1967)</strong>, before transitioning into his electric period</li>
+                    <li>70s - he experimented with rock, funk, African rhythms, emerging electronic music technology,
+                        and an
+                        ever-changing line-up of musicians. This period, includind <strong>In a Silent Way
+                            (1969)</strong>,
+                        <strong>Bitches Brew (1970)</strong> and <strong>Agharta (1975)</strong> was the most
+                        controversial
+                        in his career</li>
+                    <li>80s - after a five-year retirement, he resumed his career: employing younger musicians and pop
+                        sounds on albums such as <strong>Man with the Horn (1981)</strong> and <strong>Tutu
+                            (1986)</strong>.
+                        Critics were generally unreceptive but the decade garnered the trumpeter his highest level of
+                        commercial recognition</li>
+                    <li>September 28, 1991 - Davis died for the combined effects of a stroke, pneumonia, and respiratory
+                        failure</li>
+                    <li>2006 - Davis was inducted into the <u>Rock and Roll Hall of Fame</u>, which recognized him as
+                        <i>"one of the key figures in the history of jazz."</i></li>
+                </ol>
 
-        <ul>
-            <li>Charlie Parker</li>
-            <li>John Coltrane</li>
-            <li>Paul Chambers</li>
-            <li>Bill Evans</li>
-            <li>Gil Evans</li>
-            <li>Ron Carter</li>
-            <li>Sonny Rollins</li>
-            <li>Herbie Hancock</li>
-            <li>Tony Williams</li>
-            <li>Wayne Shorter</li>
-            <li>Joe Zawinul</li>
-            <li>Al Foster</li>
-            <li> John McLaughlin</li>
-        </ul>
-    </div>
 
-    <h3>Read more about Miles Davis <a href="https://en.wikipedia.org/wiki/Miles_Davis" target="blank">here</a> and <a href="https://www.milesdavis.com">here</a></h3>
 
+                <h4><strong>Associated Acts</strong></h4>
+
+                <ul>
+                    <li>Charlie Parker</li>
+                    <li>John Coltrane</li>
+                    <li>Paul Chambers</li>
+                    <li>Bill Evans</li>
+                    <li>Gil Evans</li>
+                    <li>Ron Carter</li>
+                    <li>Sonny Rollins</li>
+                    <li>Herbie Hancock</li>
+                    <li>Tony Williams</li>
+                    <li>Wayne Shorter</li>
+                    <li>Joe Zawinul</li>
+                    <li>Al Foster</li>
+                    <li> John McLaughlin</li>
+                </ul>
+            </div>
+        </section>
+        <div id="tribute-link">
+            <h3>Read more about Miles Davis <a href="https://en.wikipedia.org/wiki/Miles_Davis" target="blank">here</a>
+                and <a href="https://www.milesdavis.com" target="blank">here</a></h3>
+        </div>
+    </main>
 </body>
+
 </html>
