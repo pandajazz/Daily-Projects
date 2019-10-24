@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Radio and Checkbox</title>
+  <style>
+    .radio-div,
+    .checkbox-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: block;
+      position: relative;
+      padding-left: 27px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkradio {
+      border-radius: 50%;
+    }
+
+    .checkmark,
+    .checkradio {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #eee;
+    }
+
+    .container:hover input~.checkmark,
+    .container:hover input~.checkradio {
+      background-color: #ccc;
+    }
+
+    .container input:checked~.checkmark,
+    .container input:checked~.checkradio {
+      background-color: red;
+    }
+
+    .checkmark:after,
+    .checkradio:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .container input:checked~.checkmark:after,
+    .container input:checked~.checkradio:after {
+      display: block;
+    }
+
+    .container .checkradio:after {
+      top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .container .checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+
+    /* input[type=radio],
+    input[type=checkbox] {
+      display: none;
+    }
+
+    .radio label:before {
+      border-radius: 8px;
+    }
+
+    .checkbox label:before {
+      border-radius: 3px;
+    } */
+
+    .test~p {
+      color: red
+    }
+  </style>
+</head>
+
+<body>
+  <div class='radio-div'>
+    <h2>CUSTOM RADIO BUTTON</h2>
+    <label for="uno" class="container">Uno
+      <input type="radio" id="uno" name="my-radio" />
+      <span class="checkradio"></span>
+    </label>
+    <label for="due" class="container">Due
+      <input type="radio" id="due" name="my-radio" />
+      <span class="checkradio"></span>
+    </label>
+    <label for="tre" class="container">Tre
+      <input type="radio" id="tre" name="my-radio" />
+      <span class="checkradio"></span>
+    </label>
+    <label for="quattro" class="container">Quattro
+      <input type="radio" id="quattro" name="my-radio" />
+      <span class="checkradio"></span>
+    </label>
+  </div>
+
+  <br>
+
+  <div class='checkbox-div'>
+    <h2>CHECKBOX INPUT</h2>
+    <label for="a" class="container">A
+      <input type="checkbox" id="a" name="a" checked="checked" />
+      <span class="checkmark"></span>
+    </label>
+    <label for="b" class="container">B
+      <input type="checkbox" id="b" name="b" checked="checked" />
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">C
+      <input type="checkbox" id="c" name="c" checked="checked" />
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">D
+      <input type="checkbox" id="d" name="d" checked="checked" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
